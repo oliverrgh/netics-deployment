@@ -11,7 +11,7 @@ Pada soal nomor 1, saya memahami dan mempelajari mengenai API publik melalui AI 
 ```
 const express = require('express');
 const app = express();
-const port = 32;
+const port = 82;
 
 app.use(express.json());
 
