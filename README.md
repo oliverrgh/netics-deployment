@@ -6,12 +6,13 @@
 
 ## Penjelasan
 ### Soal 1
-Pada soal nomor 1, saya memahami dan mempelajari mengenai API publik melalui AI Gemini. Saya mempelajari cara membuat struktur kode untuk API dengan NodeJS melalui bantuan Gemini. Saya memodifikasi yang diberikan oleh Gemini menyesuaikan kebutuhan pada soal 1, di mana API-nya akan memiliki endpoint /health. Untuk kode dari API-nya adalah sebagai berikut:
+Pada soal nomor 1, saya memahami dan mempelajari mengenai API publik melalui AI Gemini. Saya mempelajari cara membuat struktur kode untuk API dengan NodeJS melalui bantuan Gemini. Saya memodifikasi kode yang diberikan oleh Gemini menyesuaikan kebutuhan pada soal 1, di mana API-nya akan memiliki endpoint /health. Untuk kode dari API-nya adalah sebagai berikut:
+
 `app.js`
 ```
 const express = require('express');
 const app = express();
-const port = 82;
+const port = 3000;
 
 app.use(express.json());
 
@@ -26,5 +27,11 @@ app.get('/health', (req, res) => {
 });
 
 app.listen(port);
-
 ```
+
+- Di awal kode, program mengimport library express dan memastikan server bisa membaca file berformat JSON. Port yang digunakan pada program adalah port 3000. Seperti yang diminta pada soal, data API yang berisi nama, nrp, dan lain-lain dimasukkan pada endpoint /health. Terakhir, server akan melakukan _listen_ pada koneksi yang masuk untuk memberikan respons yang berisi data API-nya jika koneksi berhasil terhubung. 
+
+Untuk history chat dengan Gemini dapat diakses pada link berikut: https://gemini.google.com/share/79b5e33514d1
+
+### Soal 2
+Untuk melakukan deployment pada VPS public, saya mencari cara untuk deploy melalui youtube dan menemukan bahwa saya bisa melakukan deploy secara gratis melalui Azure VPS. Namun, karena pembuatan Virtual Machine pada Azure yang akan digunakan untuk melakukan deployment ternyata berbayar, saya memutuskan untuk melakukan deployment dengan meminjam VPS dari teman saya.
